@@ -1,0 +1,16 @@
+.Navbar{
+    background-color: rgba(215, 231, 250, 0.791);
+    padding: 0;
+   margin: 0px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
+.d-flex{
+    margin-right: 100px;
+}
+.fo{
+    margin-left: 100px;
+}
+.h{
+    margin-left: 55px;
+}
+
