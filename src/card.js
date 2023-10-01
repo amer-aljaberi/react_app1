@@ -3,29 +3,37 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useState } from 'react';
+import Modal from 'react-bootstrap/Modal';
+
 
 
 
  function Cardcomp(props){
-    let [counter,setcounter] = useState(0)
-
-    function addToFavorites(){
-        setcounter(counter+1)
-    }
-    return(
-      
+ let [show, setShow] = useState(false);
+  function handleshow () {
+    setShow(! show )
+  }
+    return( 
+      <>  
 <Card style={{ width: '18rem'}}>
       <Card.Img variant="top" src= {props.image}/>
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
-        <Card.Text>
-        ★ {counter}
-
-        </Card.Text>
-        <Button variant="primary" onClick={addToFavorites}>  Add to favprites </Button>
+        <Button variant="primary"onClick={handleshow}>Show Detalis</Button>
       </Card.Body>
     </Card>
-
+    <Modal show={show} onHide={handleshow}>
+    <Modal.Header closeButton>
+      <Modal.Title>{props.title}</Modal.Title>
+    </Modal.Header>
+    <Modal.Body>{props.description}  <br /> <b>price : {props.price}$</b> </Modal.Body>
+    <Modal.Footer>
+      <Button variant="secondary" onClick={handleshow}>
+        Close
+      </Button>
+    </Modal.Footer>
+  </Modal>
+  </>   
 
     );
     
