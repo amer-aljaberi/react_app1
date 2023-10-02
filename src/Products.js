@@ -6,10 +6,7 @@ function Products (){
 
     return(
    <>
-   
-   Hello Words
-   
-   
+      
    </>
 
     );

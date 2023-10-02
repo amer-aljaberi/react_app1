@@ -33,9 +33,6 @@ function Header() {
                 Something else here
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Link
-            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

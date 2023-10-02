@@ -26,6 +26,7 @@ function Main(){
               placeholder="Search"
               className="me-2"
               aria-label="Search"
+             name ='search'
             />
             <Button variant="outline-success" type="submit">Search</Button>
           </Form>

@@ -17,8 +17,6 @@ function App() {
  <Route  path="/Products"Component={Products}></Route>
  </Routes>
  </Router>
- <Main/>
-
 
  </>
   );
