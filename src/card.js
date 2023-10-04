@@ -26,7 +26,7 @@ import Modal from 'react-bootstrap/Modal';
     <Modal.Header closeButton>
       <Modal.Title>{props.title}</Modal.Title>
     </Modal.Header>
-    <Modal.Body>{props.description}  <br /> <b>price : {props.price}$</b> </Modal.Body>
+    <Modal.Body>{props.description}  <br /> <b>price : {props.price}100$</b> </Modal.Body>
     <Modal.Footer>
       <Button variant="secondary" onClick={handleshow}>
         Close
